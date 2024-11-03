@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 // use the route as middleware
 app.use(ExpRoutes);
-
+//
 // Connect to db & listen to the port once connection is successful.
 mongoose
   .connect(process.env.MONGO_DB!)
