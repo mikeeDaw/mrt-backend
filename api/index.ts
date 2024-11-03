@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 
 import ExpRoutes from "../routes/router";
 import mongoose from "mongoose";
-import router from "../routes";
 import cors from "cors";
 
 require("dotenv").config();
@@ -31,3 +30,5 @@ mongoose
 app.get("/", (req, res) => {
   res.json({ msg: "Welcome to MRT backend :D" });
 });
+
+export default app;
